@@ -1,0 +1,17 @@
+name: Web App CI/CD 
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+  
+permissions: write-all
+
+jobs:
+  build_test_deploy:
+
+    name: Build Test and Deploy - Call reusable workflow
+    uses: ORT-DevOps-2023S2G1/workflows-repository/.github/workflows/react-app-cicd.yml@main
+    secrets: inherit
