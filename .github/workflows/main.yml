@@ -13,5 +13,5 @@ jobs:
   build_test_deploy:
 
     name: Build Test and Deploy
-    uses: ORT-DevOps-2023S2G1/workflows-repository/.github/workflows/react-app-cicd.yml@feature/deploy
+    uses: ORT-DevOps-2023S2G1/workflows-repository/.github/workflows/react-app-cicd.yml@main
     secrets: inherit
